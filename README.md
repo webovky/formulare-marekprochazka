@@ -57,4 +57,4 @@ git commit -m "Init commit"
 git remote add origin git@github.com:GitHubNick/kokos.git
 git push -u origin master
 ```
-bla bla bla
+
