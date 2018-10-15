@@ -31,6 +31,10 @@ def index():
 def info():
     return render_template('info.html')
 
+@app.route("/abc/")
+def abc():
+    return render_template("abc")
+
 
 ############################################################################
 if __name__ == '__main__':
