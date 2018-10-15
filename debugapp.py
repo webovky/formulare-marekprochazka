@@ -8,7 +8,6 @@ app.secret_key = os.urandom(24)
 
 ############################################################################
 
-
 slova = ('Super', 'Perfekt', 'Úža', 'Flask')
 
 
@@ -28,9 +27,9 @@ def index():
     return render_template('base.html', slova=slova)
 
 
-@app.route('/onas/')
-def onas():
-    return render_template('onas.html')
+@app.route('/info/')
+def info():
+    return render_template('info.html')
 
 
 ############################################################################

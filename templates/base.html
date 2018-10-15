@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Flask Pokus</title>
+  <title>{%block title%}Flask Pokus{%endblock%}</title>
 
   <meta name="description" content="Flask pokus">
   <meta name="author" content="Marek">
@@ -25,7 +25,7 @@
 
   <ul id="nav">
     <li><a href="{{ url_for('index') }}">Domů</a></li>
-    <li><a href="{{ url_for('onas') }}">O nás</a></li>
+    <li><a href="{{ url_for('info') }}">Info</a></li>
   </ul>
 
   {% block obsah %}
@@ -36,6 +36,10 @@
             <li>Je to {{s}}.</li>
         {% endfor %}
     </ul>
+    
+{%- for i in range(1, 7) %}
+   <h{{i}}>Mám {{i}}-násobnou radost</h{{i}}>
+{%- endfor %} 
 
 <p>Ukázková  aplikace pro web framework <a
   href="http://flask.pocoo.org/">Flask</a>. </p>
