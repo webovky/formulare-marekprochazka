@@ -1,34 +1,46 @@
-# FlaskTree
-
-## Miluju 4L!
+# Start Flask
 
 Zde najdete základní adresářovou strukturu pro aplikaci ve 
 [Flasku](http://flask.pocoo.org/).
 
-Dejme tomu že začínám nový projekt. Bude se jmenovat třeba *Kokos*.
+0. Dejme tomu že začínám nový projekt. Bude se jmenovat třeba *Foo*.
+Můžete si [forknout](htts://help.github.com/articles/fork-a-repo/)
+nebo prostě jen 
+[naklonovat](https://help.github.com/articles/cloning-a-repository/)
+tento repositář:
 
-* Vytvořím si pro něj adresář a vše ostatní se bude dít uvnitř tohoto adresáře.
 
 ```bash
-mkdir kokos
-cd kokos
+git clone https://github.com/spseol/startflask.git Foo
+```
+
+nebo 
+
+```bash
+git clone git@github.com:NICK/Foo.git
+```
+
+a potom:
+
+```bash
+cd Foo
 ```
 
 1. Vytvořím si [virtuální prostředí](https://virtualenv.pypa.io/en/stable/)
-   právě pro aplikaci *Kokos*.:
+   právě pro aplikaci *Foo*.:
 
 ```bash
-python3 -m venv .venv
+python3 -m venv .venv-foo
 ```
 
 2. Virtuální prostředí si aktivuji:
 
 ```bash
-source venv_kokos/bin/activate
+source venv-foo/bin/activate
 ```
 nebo na Windows:
 ```
-venv_kokos\Scripts\activate
+venv-foo\Scripts\activate
 
 ```
 
@@ -36,27 +48,12 @@ venv_kokos\Scripts\activate
 
 ```bash
 pip install flask flask-socketio
-pip install flask-mail flask-markdown
+pip install flask-mail flask-misaka
 pip install psycopg2 pony
 ```
 
-4. Vytvoříte si adresářovou strukturu:
+4. A teď stačí spustit vývojový server:
 
-```bash
-make-flask-tree.sh webface
 ```
-
-5. Inicializujte si Git repositář nahrajte svou práci 
-   do [nového prázdného repositáře](https://github.com/new) 
-   na GitHubu.
-
-   GitHub vám napoví co dělat. Příkazy můžou vypadat třeba takto:
-
-```bash
-git init
-git add 'run-*.py' webface
-git commit -m "Init commit"
-git remote add origin git@github.com:GitHubNick/kokos.git
-git push -u origin master
+./startapp.py
 ```
-
