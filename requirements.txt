@@ -1,0 +1,4 @@
+Flask
+Flask-misaka
+python-dotenv
+pony
