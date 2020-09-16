@@ -1,5 +1,10 @@
 # Start Flask
 
+* [Jak psát web, návod na html stránky](https://www.jakpsatweb.cz/)
+* [Flask docs](https://flask.palletsprojects.com)
+* [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
+* [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
+
 Zde najdete základní adresářovou strukturu pro aplikaci ve 
 [Flasku](http://flask.pocoo.org/).
 
