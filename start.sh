@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 git rm --cached .env
 
-echo -ne "\nMůžu se smazat? Y/n"
+echo "\nMůžu se smazat? Y/n"
 read anone
 if [ -z $anone ] || [ $anone != n ]; then
     git rm $(basename $0)
