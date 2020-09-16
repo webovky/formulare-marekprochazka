@@ -1,5 +1,6 @@
 *.swp
-webface/databaze.sqlite
+webface/*.sqlite
+*/*.sqlite
 .vscode
 
 # Byte-compiled / optimized / DLL files
