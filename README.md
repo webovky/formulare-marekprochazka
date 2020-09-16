@@ -1,12 +1,14 @@
 # Start Flask
 
+[flask]: https://flask.palletsprojects.com
+
 * [Jak psát web, návod na html stránky](https://www.jakpsatweb.cz/)
-* [Flask docs](https://flask.palletsprojects.com)
+* [Flask docs][flask]
 * [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
 * [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
 
 Zde najdete základní adresářovou strukturu pro aplikaci ve 
-[Flasku](http://flask.pocoo.org/).
+[Flasku][flask]
 
 0. Dejme tomu že začínám nový projekt. Bude se jmenovat třeba *Foo*.
 Můžete si [forknout](htts://help.github.com/articles/fork-a-repo/)

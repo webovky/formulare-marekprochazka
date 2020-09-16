@@ -6,21 +6,31 @@
 ############################################################
 
 DIRNAME=$(dirname $0)
-
 cd $DIRNAME
+BASENAME=$(basename $PWD)
 
-python3 -m venv .venv-${DIRNAME}
-source .venv-${DIRNAME}/bin/activate
+python3 -m venv .venv-${BASENAME}
+. .venv-${BASENAME}/bin/activate
+
 pip install -U pip
 pip install -r requirements.txt
 
-
 git rm --cached .env
 
-echo "Můžu se smazat? Y/n"
+echo -ne "\nMůžu se smazat? Y/n"
 read anone
-if [[ $anone != n ]]; then
-    echo rm $0
+if [ -z $anone ] || [ $anone != n ]; then
+    rm $(basename $0)
 else
     echo "... no dobře, ale být tebou, tak bych mě vymazal!"
 fi
+
+echo "Pro aktivaci virtuálního prostředí použij:
+
+source .venv-${BASENAME}/bin/activate
+
+nebo
+
+. .venv-${BASENAME}/bin/activate
+
+" 
