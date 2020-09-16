@@ -18,20 +18,11 @@ tento repositář:
 
 
 ```bash
-git clone https://github.com/spseol/startflask.git Foo
-```
-
-nebo 
-
-```bash
-git clone git@github.com:NICK/Foo.git
-```
-
-a potom:
-
-```bash
+git clone --depth 1 https://github.com/spseol/startflask.git Foo
 cd Foo
 ```
+Repositář obsahuje skript **`start.sh`**, který vše další udělá za vás.
+Pokud chcete mít kontrolu, můžete pokračovat a všechno si pěkně udělat růčo.
 
 1. Vytvořím si [virtuální prostředí](https://virtualenv.pypa.io/en/stable/)
    právě pro aplikaci *Foo*.:
@@ -54,13 +45,19 @@ venv-foo\Scripts\activate
 3. Do virtuálního prostředí nainstaluji potřebné moduly:
 
 ```bash
+pip install -r requirements.txt
+```
+nebo ručně nestručně:
+
+```bash
 pip install flask flask-socketio
 pip install flask-mail flask-misaka
 pip install psycopg2 pony
 ```
 
+
 4. A teď stačí spustit vývojový server:
 
 ```
-./startapp.py
+flask run
 ```
