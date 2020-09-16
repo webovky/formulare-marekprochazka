@@ -20,10 +20,12 @@ git rm --cached .env
 echo -ne "\nMůžu se smazat? Y/n"
 read anone
 if [ -z $anone ] || [ $anone != n ]; then
-    rm $(basename $0)
+    git rm $(basename $0)
 else
     echo "... no dobře, ale být tebou, tak bych mě vymazal!"
 fi
+
+git commit -m 'new Init'
 
 echo "Pro aktivaci virtuálního prostředí použij:
 
