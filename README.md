@@ -1,11 +1,32 @@
-# Start Flask
+Start Flask
+=========================
 
 [flask]: https://flask.palletsprojects.com
 
-* [Jak psát web, návod na html stránky](https://www.jakpsatweb.cz/)
-* [Flask docs][flask]
-* [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
+Tento repositář má vám (i mě) usnadnit založení nového projektu
+s frameworkem [Flask][].
+
+Několik užitečných odkazů pro začátek
+------------------------------------------
+
+* [Explore Flask](https://exploreflask.com/)
+* [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+---------------------------------------------------------------------------
+* <https://github.com/pyvec/elsa>
+* <https://github.com/smoqadam/PyFladesk>
+* <https://github.com/ClimenteA/flaskwebgui>
+* <https://elc.github.io/posts/executable-flask-pyinstaller/>
+---------------------------------------------------------------------------
+* [w3schools.com](https://www.w3schools.com/) ,[Jak psát web](https://www.jakpsatweb.cz/) 
+* [Flask docs][flask],  [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
 * [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
+* [Bábot](https://www.blabot.cz/)
+* [Clker.com](http://www.clker.com/), [Commons](https://commons.wikimedia.org),
+  [pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/)
+---------------------------------------------------------------------------
+
+ ... jak na to?
+ ------------------------
 
 Zde najdete základní adresářovou strukturu pro aplikaci ve 
 [Flasku][flask]
@@ -34,11 +55,11 @@ python3 -m venv .venv-foo
 2. Virtuální prostředí si aktivuji:
 
 ```bash
-source venv-foo/bin/activate
+source .venv-foo/bin/activate
 ```
 nebo na Windows:
 ```
-venv-foo\Scripts\activate
+.venv-foo\Scripts\activate
 
 ```
 
