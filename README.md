@@ -1,3 +1,11 @@
+
+
+# V práci postupuji ve svém již dříve vytvořeném repository:
+https://github.com/marekprochazka/Flask-school
+
+------------------------------------------
+
+
 Start Flask
 =========================
 
